@@ -189,7 +189,7 @@
             <div class="row m-0 p-0" class="container-fluid">
               <div class ="col m-0 p-0 col-lg-6" class="container-fluid">
 
-                <img class="img-responsive m-1" alt="Responsive image" src="image/photo1.jpg" width="650px" height="235px">
+                <img class="img-responsive m-1" alt="Responsive image" src="image/photo1.PNG" width="650px" height="235px">
               </div>
               <div class ="col m-0 p-0 col-lg-6" class="container-fluid">
 
@@ -199,11 +199,11 @@
             <div class="row m-0 p-0" class="container-fluid">
               <div class ="col m-0 p-0 col-lg-6" class="container-fluid">
 
-                <img class="img--responsive ml-1" alt="Responsive image" src="image/photo3.jpg" width="650px" height="235px">
+                <img class="img--responsive ml-1" alt="Responsive image" src="image/photo3.PNG" width="650px" height="235px">
               </div>
               <div class ="col m-0 p-0 col-lg-6" class="container-fluid">
 
-                <img class="img-responsive ml-1" alt="Responsive image" src="image/photo4.jpg" width="650px" height="235px">
+                <img class="img-responsive ml-1" alt="Responsive image" src="image/photo4.PNG" width="650px" height="235px">
               </div>
             </div>
       </div>
@@ -260,28 +260,16 @@
         <div class="row">
           <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-6">
             <p class="display-4 text-dark mt-5">Contact Us</p>
-            <form class="text-dark">
-              <div class="form-group">
-                <label for="inpuName">Enter Your Name</label>
-                <input type="text" class=" form-control" placeholder="Enter Name" required>
-              </div>
-              <div class="form-group">
+            <form class="text-dark" action="php/contactForm.php">
+                <label for="inputName">Enter Your Name</label>
+                <input type="text" name="name" class=" form-control" placeholder="Enter Name" required>
                 <label for="enterEmail">Enter Your Email</label>
-                <input type="email" class="form-control" placeholder="Enter Email" required>
-              </div>
-              <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="Enter Email" required>
                 <label for="enterSubject">Subject</label>
-                <input placeholder="Suject" class="form-control" required>
-              </div>
-              <div class="form-group">
+                <input placeholder="Suject" name="subject" class="form-control" required>
                 <label for="enterMassage">Massage</label>
-                <textarea rows="4" placeholder="Write massage here" class="form-control" required></textarea>
-              </div>
-              <div class="form-group">
-                <button class="form-control button mx-auto">Send massage</button>
-              </div>
-
-
+                <textarea rows="4" placeholder="Write massage here" class="form-control" name="massage" required></textarea>
+                <button class="form-control button mx-auto mt-2" name="submit" type="submit">Send massage</button>
             </form>
           </div>
           <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-6">
@@ -290,8 +278,7 @@
                 Khilji Road, Mohammadpur,
                Dhaka-1207, Bangladesh.
                 </span><br>
-              <i class="fa fa-phone contact" aria-hidden="true"></i><span class="ml-2">+00880-1716788888</span><br>
-              <i class="fa fa-envelope-o contact" aria-hidden="true"></i><span class="ml-2">info@media-point.org</span><br>
+                           <i class="fa fa-envelope-o contact" aria-hidden="true"></i><span class="ml-2">info@media-point.org</span><br>
             </div>
 
             <div class="followDetails">
@@ -307,7 +294,7 @@
         </div>
       </div>
     </section>
-    <! footer section>
+    <!-- footer section-->
     <footer >
       <p class="text-center">&copy2020 All Rights Reserved</p>
     </footer>
